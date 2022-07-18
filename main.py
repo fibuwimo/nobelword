@@ -32,7 +32,9 @@ titles=[
     "toshi.csv",
     "toro.csv",
     "bochan.csv",
-    "yamanasi.csv"
+    "yamanasi.csv",
+    "takase.csv",
+    "maihime.csv"
 ]
 titles_name=[
     "銀河鉄道の夜",
@@ -50,7 +52,9 @@ titles_name=[
     "杜子春",
     "トロッコ",
     "坊ちゃん",
-    "やまなし"
+    "やまなし",
+    "高瀬舟",
+    "舞姫"
 ]
 
 idx=random.randint(0,len(titles)-1)
