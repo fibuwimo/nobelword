@@ -9,8 +9,10 @@ def b1_click():
         if (word in w):
             count +=1
     t1.insert(tk.END,'{}:{}回\n'.format(word,count))
+    e1.delete(0, tk.END)
 def b2_click():
     ans=e2.get()
+    e2.delete(0, tk.END)
     if(ans==titles_name[idx]):
         t2.insert(tk.END,f'「{ans}」……正解！！\n')
     else:
@@ -34,7 +36,9 @@ titles=[
     "bochan.csv",
     "yamanasi.csv",
     "takase.csv",
-    "maihime.csv"
+    "maihime.csv",
+    "kani.csv",
+    "kazeno.csv"
 ]
 titles_name=[
     "銀河鉄道の夜",
@@ -54,7 +58,9 @@ titles_name=[
     "坊ちゃん",
     "やまなし",
     "高瀬舟",
-    "舞姫"
+    "舞姫",
+    "蟹工船",
+    "風の又三郎"
 ]
 
 idx=random.randint(0,len(titles)-1)
